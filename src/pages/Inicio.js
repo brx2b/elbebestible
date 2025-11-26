@@ -3,7 +3,6 @@ import NavbarTop from "../components/NavBarTop";
 import { CarritoContext } from "../context/CarritoContext";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
-
 const API_URL = "https://backend-ev-final.onrender.com";
 
 export default function Inicio() {
@@ -31,7 +30,7 @@ export default function Inicio() {
       alert("Debes iniciar sesión para agregar productos al carrito");
       navigate("/pages/Login");
       return;
-    }else if (usuario.rol !== "cliente") {
+    }else if (usuario.rol !== false) {
       alert("Solo los clientes pueden agregar productos al carrito");
       return;
     }
@@ -44,7 +43,7 @@ export default function Inicio() {
 
       <div style={{ paddingTop: "80px" }}>
         <div className="container">
-          <h2 className="mb-4 text-center fw-bold">Bebidas disponibles</h2>
+          <h2 className="mt-3 mb-4 text-center fw-bold">Bebidas disponibles</h2>
 
           <div className="row g-4">
             {bebidas.map(b => (

@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 const API_URL = "https://backend-ev-final.onrender.com";
 
+
 export default function Login() {
   const navigate = useNavigate();
 
@@ -68,6 +69,7 @@ export default function Login() {
       <div
         className="d-flex justify-content-center align-items-center bg-light"
         style={{ width: "45%" }}
+        
       >
         <div className="card shadow p-4 w-75">
           <h2 className="text-center fw-bold mb-4">Iniciar Sesión</h2>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { Link } from "react-router-dom";
 const API_URL = "https://backend-ev-final.onrender.com";
 
 export default function Usuarios() {
@@ -78,8 +78,14 @@ export default function Usuarios() {
 
   return (
     <div className="container mt-5">
+      <Link to="/">
+        <img
+          src="/imgs/fechita_izquierda.png"
+          style={{ cursor: "pointer", width: "60px", margin: "20px" }}
+        />
+      </Link>
       <h1 className="text-center fw-bold mb-4">Administrar Usuarios</h1>
-
+      
       {/* TABLA */}
       <div className="table-responsive shadow-sm bg-white p-3 rounded mb-5">
         <table className="table align-middle text-center">
@@ -218,17 +224,8 @@ export default function Usuarios() {
           </div>
 
           <div className="col-md-2 d-flex align-items-center">
-            <div className="form-check mt-4">
-              <input
-                type="checkbox"
-                className="form-check-input"
-                checked={nuevo.rol}
-                onChange={(e) =>
-                  setNuevo({ ...nuevo, rol: e.target.checked })
-                }
-              />
-              <label className="form-check-label">Admin</label>
-            </div>
+            
+            
           </div>
 
           <div className="col-md-12 text-end">
