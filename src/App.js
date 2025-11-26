@@ -6,6 +6,8 @@ import Login from './pages/Login';
 import Registro from './pages/Registro';
 import Inicio from './pages/Inicio';
 import { CarritoProvider } from './context/CarritoContext';
+import Bebidas from './pages/adminPages/Bebidas';
+import Usuarios from './pages/adminPages/Usuarios';
 function App() {
   const API_URL="https://backend-ev-final.onrender.com"
 
@@ -16,7 +18,8 @@ function App() {
           <Route path="/" element={<Inicio />} />
           <Route path="/pages/Login" element={<Login />} />
           <Route path="/pages/Registro" element={<Registro />} />
-
+          <Route path="/pages/adminPages/Bebidas" element={<Bebidas />} />
+          <Route path="/pages/adminPages/Usuarios" element={<Usuarios />} />
         </Routes>
       </BrowserRouter>
     </CarritoProvider>
