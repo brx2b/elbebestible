@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Offcanvas, Button } from "react-bootstrap";
 import { useRef } from 'react';
 import VariableProximity from './VariableProximity.jsx';
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 
 export default function NavbarTop() {
   const containerRef = useRef(null);

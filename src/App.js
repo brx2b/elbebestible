@@ -8,6 +8,9 @@ import Inicio from './pages/Inicio';
 import { CarritoProvider } from './context/CarritoContext';
 import Bebidas from './pages/adminPages/Bebidas';
 import Usuarios from './pages/adminPages/Usuarios';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 function App() {
   const API_URL="https://backend-ev-final.onrender.com"
 
