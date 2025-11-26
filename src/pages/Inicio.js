@@ -31,6 +31,9 @@ export default function Inicio() {
       alert("Debes iniciar sesión para agregar productos al carrito");
       navigate("/pages/Login");
       return;
+    }else if (usuario.rol !== "cliente") {
+      alert("Solo los clientes pueden agregar productos al carrito");
+      return;
     }
     agregarAlCarrito(b);
   };
