@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main # O la rama que definas para el curso
-  workflow dispatch:
 env:
   AWS_REGION: us-east-1                  # Cambiar por tu región de AWS
   ECR_REPOSITORY: ${{secrets.ECR_REPOSITORY}}      # SECRET de tu repo en ECR
